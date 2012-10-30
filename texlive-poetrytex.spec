@@ -1,11 +1,11 @@
-# revision 27174
+# revision 27893
 # category Package
 # catalog-ctan /macros/latex/contrib/poetrytex
-# catalog-date 2012-07-26 10:22:38 +0200
+# catalog-date 2012-10-05 07:24:45 +0200
 # catalog-license lppl1.3
-# catalog-version 1.1
+# catalog-version 1.3
 Name:		texlive-poetrytex
-Version:	1.1
+Version:	1.3
 Release:	1
 Summary:	Typeset anthologies of poetry
 Group:		Publishing
