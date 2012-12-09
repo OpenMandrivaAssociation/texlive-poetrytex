@@ -1,11 +1,11 @@
-# revision 27893
+# revision 27174
 # category Package
 # catalog-ctan /macros/latex/contrib/poetrytex
-# catalog-date 2012-10-05 07:24:45 +0200
+# catalog-date 2012-07-26 10:22:38 +0200
 # catalog-license lppl1.3
-# catalog-version 1.3
+# catalog-version 1.1
 Name:		texlive-poetrytex
-Version:	1.3
+Version:	1.1
 Release:	1
 Summary:	Typeset anthologies of poetry
 Group:		Publishing
@@ -50,3 +50,11 @@ concern itself with actually typesettinig the verse itself.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Fri Aug 10 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
++ Revision: 813733
+- Import texlive-poetrytex
+- Import texlive-poetrytex
+
