@@ -1,11 +1,11 @@
-# revision 27174
+# revision 31463
 # category Package
 # catalog-ctan /macros/latex/contrib/poetrytex
-# catalog-date 2012-07-26 10:22:38 +0200
+# catalog-date 2013-08-18 10:44:14 +0200
 # catalog-license lppl1.3
-# catalog-version 1.1
+# catalog-version 2.0.0
 Name:		texlive-poetrytex
-Version:	1.1
+Version:	2.0.0
 Release:	1
 Summary:	Typeset anthologies of poetry
 Group:		Publishing
@@ -36,7 +36,9 @@ concern itself with actually typesettinig the verse itself.
 %files
 %{_texmfdistdir}/tex/latex/poetrytex/poetrytex.sty
 %doc %{_texmfdistdir}/doc/latex/poetrytex/README
+%doc %{_texmfdistdir}/doc/latex/poetrytex/poetrytex-style.sty
 %doc %{_texmfdistdir}/doc/latex/poetrytex/poetrytex.pdf
+%doc %{_texmfdistdir}/doc/latex/poetrytex/poetrytex.top
 #- source
 %doc %{_texmfdistdir}/source/latex/poetrytex/Makefile
 %doc %{_texmfdistdir}/source/latex/poetrytex/poetrytex.dtx
@@ -50,11 +52,3 @@ concern itself with actually typesettinig the verse itself.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Fri Aug 10 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 813733
-- Import texlive-poetrytex
-- Import texlive-poetrytex
-
