@@ -6,7 +6,7 @@
 # catalog-version 2.0.0
 Name:		texlive-poetrytex
 Version:	2.0.0
-Release:	3
+Release:	4
 Summary:	Typeset anthologies of poetry
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poetrytex
