@@ -1,12 +1,6 @@
-# revision 31463
-# category Package
-# catalog-ctan /macros/latex/contrib/poetrytex
-# catalog-date 2013-08-18 10:44:14 +0200
-# catalog-license lppl1.3
-# catalog-version 2.0.0
 Name:		texlive-poetrytex
-Version:	2.0.0
-Release:	9
+Version:	3.0.1
+Release:	1
 Summary:	Typeset anthologies of poetry
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poetrytex
@@ -34,14 +28,10 @@ concern itself with actually typesettinig the verse itself.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/poetrytex/poetrytex.sty
-%doc %{_texmfdistdir}/doc/latex/poetrytex/README
-%doc %{_texmfdistdir}/doc/latex/poetrytex/poetrytex-style.sty
-%doc %{_texmfdistdir}/doc/latex/poetrytex/poetrytex.pdf
-%doc %{_texmfdistdir}/doc/latex/poetrytex/poetrytex.top
+%{_texmfdistdir}/tex/latex/poetrytex
+%doc %{_texmfdistdir}/doc/latex/poetrytex
 #- source
-%doc %{_texmfdistdir}/source/latex/poetrytex/Makefile
-%doc %{_texmfdistdir}/source/latex/poetrytex/poetrytex.dtx
+%doc %{_texmfdistdir}/source/latex/poetrytex
 
 #-----------------------------------------------------------------------
 %prep
