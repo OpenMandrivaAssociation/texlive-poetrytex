@@ -1,13 +1,13 @@
 Name:		texlive-poetrytex
-Version:	3.0.1
-Release:	3
+Version:	39921
+Release:	1
 Summary:	Typeset anthologies of poetry
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poetrytex
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -19,12 +19,12 @@ of anthologies of poetry and other writings; it does not
 concern itself with actually typesettinig the verse itself.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -35,7 +35,8 @@ concern itself with actually typesettinig the verse itself.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
