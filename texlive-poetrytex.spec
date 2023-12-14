@@ -1,6 +1,6 @@
 Name:		texlive-poetrytex
-Version:	39921
-Release:	2
+Version:	68353
+Release:	1
 Summary:	Typeset anthologies of poetry
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poetrytex
