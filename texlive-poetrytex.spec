@@ -3,7 +3,7 @@ Version:	68353
 Release:	1
 Summary:	Typeset anthologies of poetry
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/poetrytex
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/poetrytex
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.doc.r%{version}.tar.xz
