@@ -1,45 +1,23 @@
-Name:		texlive-poetrytex
-Version:	68353
-Release:	1
+%global tl_name poetrytex
+%global tl_revision 76924
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	3.0.1
+Release:	%{tl_revision}.1
 Summary:	Typeset anthologies of poetry
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/poetrytex
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.source.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/poetrytex.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package is designed to aid in the management and formatting
-of anthologies of poetry and other writings; it does not
-concern itself with actually typesettinig the verse itself.
+The package is designed to aid in the management and formatting of
+anthologies of poetry and other writings; it does not concern itself
+with actually typesetting the verse itself.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/poetrytex
-%doc %{_texmfdistdir}/doc/latex/poetrytex
-#- source
-%doc %{_texmfdistdir}/source/latex/poetrytex
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
